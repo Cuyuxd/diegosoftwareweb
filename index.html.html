@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diego Software</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://i.postimg.cc/BQg3yd1y/Logo-Version-1.png" type="image/png">
+
+  <style>
+    :root {
+      --naranja: #ff6a00;
+      --naranja-oscuro: #cc5200;
+      --fondo: #1a1a1a;
+      --texto: #f4f4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--fondo);
+      color: var(--texto);
+      padding-top: 80px;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #111;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--naranja);
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--naranja-oscuro);
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 0 20px;
+    }
+
+    /* Logo visible en la página */
+    header <img src="<blockquote class="imgur-embed-pub" lang="en" data-id="a/q831FEj" data-context="false" ><a href="//imgur.com/a/q831FEj"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>" alt="Logo Diego Software" class="logo"> {
+      width: 180px;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px var(--naranja);
+    }
+
+    h1 {
+      color: var(--naranja);
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 14px 28px;
+      background: var(--naranja);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .button:hover {
+      background: var(--naranja-oscuro);
+      transform: scale(1.05);
+    }
+
+    /* GALERÍA */
+    .galeria {
+      max-width: 1000px;
+      margin: 60px auto 40px;
+      padding: 0 20px;
+    }
+
+    .galeria h2 {
+      color: var(--naranja);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#trabajos">Trabajos</a>
+    <a href="#videos">Videos</a>
+    <a href="mailto:diegosoftware@gmail.com">Correo</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <!-- Logo visible -->
+    <img src="https://i.postimg.cc/BQg3yd1y/Logo-Version-1.png" alt="Logo Diego Software" class="logo">
+    <h1>Diego Software</h1>
+    <p>Transformamos tu contenido en experiencias visuales de alto impacto. Edición de videos, creación de logos, miniaturas para redes, animaciones y más. Todo con estilo profesional y creativo.</p>
+    <a href="https://api.whatsapp.com/send?phone=59170816340" class="button">Contactar</a>
+  </header>
+
+  <!-- GALERÍA -->
+  <section class="galeria" id="trabajos">
+    <h2>Trabajos realizados</h2>
+    <div class="grid">
+      <img src="https://i.postimg.cc/d3C232Gk/617717182404137-652d6687d3f44.webp" alt="Trabajo 1">
+      <img src="https://i.postimg.cc/q7gCgcTJ/420c22182404137-652d6687d4e16.webp" alt="Trabajo 2">
+      <iframe src="https://www.youtube.com/embed/sjuFGmBwR60" alt="Trabajo 3">
+      <img src="https://www.youtube.com/watch?v=sjuFGmBwR60" alt="Trabajo 4">
+    </div>
+  </section>
+
+</body>
+</html>
